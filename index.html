@@ -59,10 +59,10 @@
             <img src="Captura1.PNG" alt="Ejemplo de header, nav, main y footer" width="300">
 
             <h3>📷 Agrega textos alternativos a las imágenes</h3>
-            <p>Las personas con discapacidad visual utilizan lectores de pantalla para entender las imágenes. Es importante incluir el atributo **alt** en cada imagen.</p>
+            <p>Las personas con discapacidad visual utilizan lectores de pantalla para entender las imágenes. Es importante incluir el atributo alt en cada imagen.</p>
 
-            <img src="Captura2.PNG" alt="GIF ilustrativo sobre accesibilidad" width="300">
-
+            <img id="imagen" src="Captura2.PNG" alt="GIF ilustrativo sobre accesibilidad" width="300">
+<br>
             <p>🚀 <strong>¡Aplica estas prácticas y haz tu página web más inclusiva!</strong></p>
         </section>
 
@@ -90,6 +90,12 @@
                 <li>🎨 <strong>Color Contrast Checker:</strong> Para validar el contraste de colores.</li>
             </ul>
 
+            <div class="enlaces-accesibilidad">
+                <a href="https://wave.webaim.org/" target="_blank" class="boton-enlace">WAVE Accessibility Tool</a>
+                <a href="https://www.bing.com/ck/a?!&&p=36b6c45d590c411fb0e6d4ea880e72fee20d65b1886155b8680a857762621520JmltdHM9MTc0MTk5NjgwMA&ptn=3&ver=2&hsh=4&fclid=0e9a3072-6ea3-64c1-20b6-25d66f3765e8&psq=Lighthouse%3a+Extensi%c3%b3n+de+Google+Chrome+para+medir+accesibilidad.&u=a1aHR0cHM6Ly9jaHJvbWV3ZWJzdG9yZS5nb29nbGUuY29tL2RldGFpbC9saWdodGhvdXNlL2JsaXBtZGNvbmxrcGluZWZlaG5tamFtbWZqcG1wYmprP2hsPWVz&ntb=1" target="_blank" class="boton-enlace">Lighthouse Extension</a>
+                <a href="https://coolors.co/contrast-checker/ce7c18-19416c" target="_blank" class="boton-enlace">Coolors Contrast Checker</a>
+            </div>
+           
             <p>✨ <strong>Tu objetivo es garantizar que cada usuario tenga una experiencia digital sin barreras.</strong></p>
 
         </section>
@@ -97,8 +103,7 @@
         <!-- 📩 Sección de Contacto -->
         <section id="contacto" class="seccion">
             <h2>📩 Contacto</h2>
-            <p>Si tienes alguna pregunta o sugerencia, completa el siguiente formulario:</p>
-
+            
             <h3>📌 Características de un formulario accesible:</h3>
             <ul>
                 <li>✔  Uso de etiquetas &lt;label&gt; para asociar campos de entrada.</li>
@@ -113,10 +118,10 @@
             <form>
                 <label for="nombre">👤 Nombre:</label>
                 <input type="text" id="nombre" name="nombre" aria-label="Ingrese su nombre">
-                
+                <br>
                 <label for="email">📧 Correo:</label>
                 <input type="email" id="email" name="email" aria-label="Ingrese su correo electrónico">
-                
+                <br>
                 <button type="submit">✉ Enviar</button>
             </form>
             <h3>🚀 Consejos para mejorar la accesibilidad en formularios:</h3>
@@ -124,6 +129,7 @@
                 <li>✔ Evitar el uso de solo colores para indicar errores.</li>
                 <li>✔ Proporcionar mensajes de error claros.</li>
                 <li>✔ Permitir navegación con teclado.</li>
+                <img id="imagenError" src="EjemplodeError.PNG" alt="Ejemplo mensaje de error claro" >
             </ul>
         </section>
 

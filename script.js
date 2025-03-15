@@ -1,14 +1,22 @@
 // Función para mostrar solo la sección seleccionada
 function mostrarSeccion(id) {
-    // Ocultar todas las secciones
-    let secciones = document.querySelectorAll('.seccion');
-    secciones.forEach(seccion => {
+    // Oculta todas las secciones
+    document.querySelectorAll('.seccion').forEach(seccion => {
         seccion.classList.remove('activa');
     });
 
-    // Mostrar la sección seleccionada
+    // Muestra la sección seleccionada
     document.getElementById(id).classList.add('activa');
+
+    // Remueve la clase 'activo' de todos los enlaces
+    document.querySelectorAll('.menu ul li a').forEach(link => {
+        link.classList.remove('activo');
+    });
+
+    // Agrega la clase 'activo' al enlace seleccionado
+    document.querySelector(`.menu ul li a[href="#"][onclick="mostrarSeccion('${id}')"]`).classList.add('activo');
 }
+
 
 // Mostrar la sección de inicio por defecto
 document.addEventListener("DOMContentLoaded", function() {
