@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial Página Accesible</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 🏠 Menú de navegación accesible -->
+    <nav class="menu">
+        <ul>
+            <li><a href="#" onclick="mostrarSeccion('inicio')">🏡 Inicio</a></li>
+            <li><a href="#" onclick="mostrarSeccion('servicios')">💡 Servicios</a></li>
+            <li><a href="#" onclick="mostrarSeccion('contacto')">📩 Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- 🔎 Botones de accesibilidad para modificar el tamaño del texto -->
+    <div class="accesibilidad">
+        <button id="aumentarTexto">🔍 Aumentar Texto</button>
+        <button id="disminuirTexto">🔽 Disminuir Texto</button>
+    </div>
+
+    <!-- 📌 Contenido principal -->
+    <main>
+
+        <!-- 🏡 Sección de Inicio -->
+        <section id="inicio" class="seccion activa">
+            <h1>🌍 Tutorial de Accesibilidad Web con HTML, CSS y JavaScript</h1>
+            <p>
+                La accesibilidad web garantiza que todas las personas, incluidas aquellas con discapacidades, puedan navegar y usar un sitio sin dificultades.
+            </p>
+            <p>
+                En este tutorial, aprenderás cómo mejorar la accesibilidad en una página web utilizando **HTML, CSS y JavaScript**.
+            </p>
+            
+            <h2>📌 ¿Qué aprenderás?</h2>
+            <ul>
+                <li>✅ Crear un menú de navegación accesible.</li>
+                <li>✅ Ocultar y mostrar contenido dinámicamente.</li>
+                <li>✅ Asegurar que los formularios sean accesibles.</li>
+                <li>✅ Implementar funciones que mejoran la experiencia del usuario.</li>
+            </ul>
+
+            <img src="https://www.bing.com/th/id/OGC.3be5005d818307e7e30f889506aa7856?pid=1.7&rurl=http%3a%2f%2f4.bp.blogspot.com%2f-8w9iUDPQ8As%2fUz7Mk1T3mwI%2fAAAAAAAAAQs%2fSvfYWkeUsW8%2fs1600%2fimagen.gif&ehk=ajvNBUXJwEbiAgzgTIqwskkNhJmR4jz4b%2bnbv4cLLiQ%3d" 
+            alt="Persona utilizando una computadora" width="300">
+
+            <h3>📝 Usa etiquetas semánticas en HTML</h3>
+            <p>Las etiquetas semánticas ayudan a los lectores de pantalla y a los motores de búsqueda a comprender la estructura del contenido.</p>
+            <ul>
+                <li>📌 Header: En HTML, el header es un elemento semántico que representa la cabecera de una página web o de una sección dentro de ella. Generalmente, contiene elementos como el logo, el título, la navegación principal y otros contenidos introductorios.</li>
+                <li>📌 Nav: Es un elemento semántico que representa una sección de navegación, generalmente utilizada para agrupar enlaces que permiten moverse dentro del sitio web</li>
+                <li>📌 Main: Define el contenido principal del documento, excluyendo encabezados, barras laterales y pies de página. Solo debe haber un main por página</li>
+                <li>📌 Footer: Representa el pie de página de un documento o sección, generalmente contiene información como derechos de autor, enlaces de contacto o datos adicionales.</li>
+            </ul>
+
+            <img src="Captura1.PNG" alt="Ejemplo de header, nav, main y footer" width="300">
+
+            <h3>📷 Agrega textos alternativos a las imágenes</h3>
+            <p>Las personas con discapacidad visual utilizan lectores de pantalla para entender las imágenes. Es importante incluir el atributo **alt** en cada imagen.</p>
+
+            <img src="Captura2.PNG" alt="GIF ilustrativo sobre accesibilidad" width="300">
+
+            <p>🚀 <strong>¡Aplica estas prácticas y haz tu página web más inclusiva!</strong></p>
+        </section>
+
+        <!-- 💡 Sección de Servicios -->
+        <section id="servicios" class="seccion">
+            <h2>💡 ¿Cómo funciona esta sección?</h2>
+            <p>
+                Al hacer clic en "Servicios" en el menú de navegación, se oculta el resto del contenido y solo se muestra esta sección. Esto mejora la experiencia de usuario, evitando información innecesaria y permitiendo una navegación más clara y fluida.
+            </p>
+            
+            <h3>🔹 Código que controla esta funcionalidad:</h3>
+            <img src="Captura.PNG" alt="Código de navegación accesible" width="300">
+
+            <h3>🚀 Beneficios de mejorar la accesibilidad:</h3>
+            <ul>
+                <li>✔ Mejora la experiencia del usuario.</li>
+                <li>✔ Permite que más personas accedan a la información.</li>
+                <li>✔ Aumenta el alcance y la usabilidad del sitio.</li>
+                <li>✔ Cumple con normativas de accesibilidad web (WCAG).</li>
+            </ul>
+            <h3>🔍 Herramientas para evaluar la accesibilidad:</h3>
+            <ul>
+                <li>🛠 <strong>WAVE:</strong> Evaluador de accesibilidad web.</li>
+                <li>🔍 <strong>Lighthouse:</strong> Extensión de Google Chrome para medir accesibilidad.</li>
+                <li>🎨 <strong>Color Contrast Checker:</strong> Para validar el contraste de colores.</li>
+            </ul>
+
+            <p>✨ <strong>Tu objetivo es garantizar que cada usuario tenga una experiencia digital sin barreras.</strong></p>
+
+        </section>
+
+        <!-- 📩 Sección de Contacto -->
+        <section id="contacto" class="seccion">
+            <h2>📩 Contacto</h2>
+            <p>Si tienes alguna pregunta o sugerencia, completa el siguiente formulario:</p>
+
+            <h3>📌 Características de un formulario accesible:</h3>
+            <ul>
+                <li>✔  Uso de etiquetas &lt;label&gt; para asociar campos de entrada.</li>
+                <li>✔  Atributo aria-label para describir campos a lectores de pantalla.</li>
+                <li>✔  Botones con descripciones claras.</li>
+            </ul>
+
+            <h3>💻 Ejemplo de formulario accesible</h3>
+            <img src="Captura3.PNG" alt="Código de navegación accesible" width="300">
+
+
+            <form>
+                <label for="nombre">👤 Nombre:</label>
+                <input type="text" id="nombre" name="nombre" aria-label="Ingrese su nombre">
+                
+                <label for="email">📧 Correo:</label>
+                <input type="email" id="email" name="email" aria-label="Ingrese su correo electrónico">
+                
+                <button type="submit">✉ Enviar</button>
+            </form>
+            <h3>🚀 Consejos para mejorar la accesibilidad en formularios:</h3>
+            <ul>
+                <li>✔ Evitar el uso de solo colores para indicar errores.</li>
+                <li>✔ Proporcionar mensajes de error claros.</li>
+                <li>✔ Permitir navegación con teclado.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
